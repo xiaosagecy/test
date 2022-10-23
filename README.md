@@ -1,0 +1,1 @@
+同时绑定gitee和github两个仓库
