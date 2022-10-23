@@ -21,8 +21,7 @@ git push -u github master
 git push -u gitee master
 ```
 
-如果要推送到GitHub，使用命令：`git push -u github master`
+如果要推送到GitHub，使用命令：`git push github master`
 
-如果要推送到Gitee，使用命令：`git push -u gitee master`
+如果要推送到Gitee，使用命令：`git push gitee master`
 
-加`-u`下次提交直接`git push`就能同时提交到两个仓库
