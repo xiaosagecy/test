@@ -63,26 +63,3 @@ git log --stat
 
 
 
-### 修正提交
-
-如第一次提交在a.txt中修改，之后commit -m "第一次提交"
-
-```txt
-第一次修改a文件
-```
-
-如果发现commit之后，还需要修改，但是还需要修改a.txt但是有不想记录第一commit的message，则使用
-
-`a.txt`
-
-```txt
-第一次修改a文件修正
-```
-
-提交命令
-
-```bash
-git add .
-git commit --amend
-```
-
