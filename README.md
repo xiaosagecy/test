@@ -154,3 +154,22 @@ git checkout main
 ```bash
 git merge login
 ```
+
+
+
+### 删除分支
+
+删除本地分支
+
+```bash
+# git branch -d 分支名
+git branch -d login
+```
+
+删除远程分支
+
+```bash
+#git push 远程仓库门 --delete 分支名
+git push origin --delete login
+```
+
