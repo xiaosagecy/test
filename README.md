@@ -106,3 +106,22 @@ git push origin help
 git push origin --tags
 ```
 
+删除标签
+
+```bash
+# 删除本地仓库标签
+# git tag -d 标签名
+git tag -d help
+
+# 把删除的标签同步到远程仓库
+# git push origin :refs/tags/标签名
+git push origin :refs/tags/help
+```
+
+或者
+
+```bash
+git tag -d help
+git push origin --delete help
+```
+
