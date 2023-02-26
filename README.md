@@ -82,6 +82,7 @@ git rest HEAD .
 
 ```bash
 git tag -a v1.0.0 -m "第一个版本号"
+git tag -a help -m "help版本号"
 ```
 
 检索标签
@@ -92,5 +93,16 @@ git tag -l
 
 # 检索条件 以v开头
 git tag -l "v*"
+```
+
+把标签推送到远程仓库
+
+```bash
+# 推送某个tag
+# git push 远程仓库名 tag名  --- 如： 推送help标签
+git push origin help
+
+# 推送所有标签
+git push origin --tags
 ```
 
