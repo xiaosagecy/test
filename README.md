@@ -63,3 +63,34 @@ git log --stat
 
 
 
+### 取消缓存区文件
+
+比如git add .把文件`a.txt`和`b.txt`全部添加到缓存区了，此时不想把`b.txt`添加缓存区，则可以：
+
+```bash
+git rest HEAD b.txt
+
+#  或者 全部撤销，再重新添加到缓存区
+git rest HEAD . 
+```
+
+
+
+### 创建标签
+
+-m 后面跟上 标签描述信息
+
+```bash
+git tag -a v1.0.0 -m "第一个版本号"
+```
+
+检索标签
+
+```bash
+# 获取所有标签
+git tag -l
+
+# 检索条件 以v开头
+git tag -l "v*"
+```
+
