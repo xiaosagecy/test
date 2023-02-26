@@ -177,8 +177,17 @@ git push origin --delete login
 
 ### 查看远程仓库分支命令
 
+查看本地与远程仓库关联的分支
+
 ```bash
 git branch -a
+```
+
+查看远程仓库的所有分支
+
+```bash
+# git ls-remote 远程仓库名
+git ls-remote gitee
 ```
 
 拉取远程分支
