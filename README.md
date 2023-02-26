@@ -125,3 +125,33 @@ git tag -d help
 git push origin --delete help
 ```
 
+
+
+### 创建分支
+
+创建分支login
+
+```bash
+git branch login
+```
+
+查看分支
+
+```bash
+git branch
+```
+
+切换分支
+
+```bash
+git checkout 分支名
+```
+
+最简单创建分支的方法：创建分支login并切换到login分支下
+
+```bash
+git checkout -b login
+```
+
+
+
