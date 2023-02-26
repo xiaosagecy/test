@@ -173,3 +173,18 @@ git branch -d login
 git push origin --delete login
 ```
 
+
+
+### 查看远程仓库分支命令
+
+```bash
+git branch -a
+```
+
+拉取远程分支
+
+```bash
+#git fetch 远程仓库名 远程仓库分支
+git fetch origin future/user
+```
+
