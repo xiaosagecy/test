@@ -25,19 +25,13 @@ git push -u gitee master
 
 如果要推送到Gitee，使用命令：`git push gitee master`
 
+### 如何撤销git add . 之后的commit操作
 
-
-### 如何撤销git add . 操作
-
-1.例如：刚刚提交的代码中，不想把 a.txt提交上去，撤销 a.txt ，使用下面代码 
+1.例如：刚刚提交的代码中，不想把 a.txt提交上去，撤销 a.txt ，使用下面代码
 
 ```bash
 git rm --cached a.txt
 ```
-
-
-
-
 
 ### git log相关命令
 
@@ -61,8 +55,6 @@ git log --stat
 
 退出git log 模式 Ctrl + Z
 
-
-
 ### 取消缓存区文件
 
 比如git add .把文件`a.txt`和`b.txt`全部添加到缓存区了，此时不想把`b.txt`添加缓存区，则可以：
@@ -73,8 +65,6 @@ git rest HEAD b.txt
 #  或者 全部撤销，再重新添加到缓存区
 git rest HEAD . 
 ```
-
-
 
 ### 创建标签
 
@@ -125,8 +115,6 @@ git tag -d help
 git push origin --delete help
 ```
 
-
-
 ### 创建分支
 
 创建分支login
@@ -153,8 +141,6 @@ git checkout 分支名
 git checkout -b login
 ```
 
-
-
 ### 合并分支
 
 首先需要从其它分支上切换回主分支，如：
@@ -168,4 +154,3 @@ git checkout main
 ```bash
 git merge login
 ```
-
