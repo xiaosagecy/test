@@ -155,3 +155,17 @@ git checkout -b login
 
 
 
+### 合并分支
+
+首先需要从其它分支上切换回主分支，如：
+
+```bash
+git checkout main
+```
+
+在主分支上进行合并
+
+```bash
+git merge login
+```
+
