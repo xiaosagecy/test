@@ -25,3 +25,13 @@ git push -u gitee master
 
 如果要推送到Gitee，使用命令：`git push gitee master`
 
+
+
+### 如何撤销git add . 操作
+
+1.例如：刚刚提交的代码中，不想把 a.txt提交上去，撤销 a.txt ，使用下面代码 
+
+```bash
+git rm --cached a.txt
+```
+
