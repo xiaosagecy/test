@@ -35,3 +35,30 @@ git push -u gitee master
 git rm --cached a.txt
 ```
 
+
+
+
+
+### git log相关命令
+
+查看最近2次提交
+
+```bash
+git log -2
+```
+
+查看最近2次 修改文件记录
+
+```bash
+git log -2 -p
+```
+
+查看git log的统计
+
+```bash
+git log --stat
+```
+
+
+
+退出git log 模式 Ctrl + Z
