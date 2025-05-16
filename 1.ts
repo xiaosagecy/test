@@ -1,4 +1,4 @@
-  async refreshRemainingAmountByNow() {
+  async function refreshRemainingAmountByNow() {
     const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
     let refreshFinishTime = null;
     try {
