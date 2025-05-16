@@ -18,9 +18,9 @@
       const timestamp = Date.now();
       while (true) {
         // 检查是否超时 1 分钟，超出抛异常停止循环
-        // if (Date.now() - timestamp > 60000) {
-        //   throw new Error('Refresh timeout, not completed for more than 1 minute');
-        // }
+        if (Date.now() - timestamp > 60000) {
+          throw new Error('Refresh timeout, not completed for more than 1 minute');
+        }
 
         const result = await this.bosConfigEnvModel.findOne(
           {
